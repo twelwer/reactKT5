@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+  background-color: #333;
+}
+.counter-container {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+
+.counter-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-title {
+  flex-grow: 1;
+}
+
+.count-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.increment-button,
+.decrement-button {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: #222;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.increment-button:hover,
+.decrement-button:hover {
+  background-color: #e0e0e0;
+}
+
+.item-count {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.add-button {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: #165664;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  transition: 100ms;
+  border-radius: 10px;
+}
+
+.add-button:hover {
+  background-color: #134b57;
+  transform: scale(1.05);
+}
