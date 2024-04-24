@@ -1,27 +1,12 @@
 import './App.css';
-import Header from './components/Header';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Footer from './components/Footer';
-import AboutPage from './pages/AboutPage';
-import ContactsPage from './pages/ContactsPage';
-import NotFoundPage from './pages/NotFoundPage';
-import ProductInfoPage from './pages/ProductInfoPage';
+import Counter from './components/Counter';
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Header/>
-        <Routes>
-          <Route path='/' element={<AboutPage/>}/>
-          <Route path='/contacts' element={<ContactsPage/>}/>
-          <Route path='/product/:id' element={<ProductInfoPage/>}/>
-          <Route path='*' element={<NotFoundPage/>}/>
-          </Routes>
-        <Footer/>
-      </Router>
+    <div className="App">
+      <Counter/>
     </div>
   );
 }
 
-export default App
+export default App;
