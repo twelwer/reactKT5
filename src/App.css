@@ -1,77 +1,96 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
+  font-family: "Montserrat", sans-serif;
   background-color: #333;
 }
-.counter-container {
-  font-family: sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: "Montserrat", sans-serif;
-  color: #fff;
+.star {
+  height: 30px;
+  color: gray; 
+  margin-top: 15px;
 }
-
-.counter-title {
-  font-size: 24px;
-  margin-bottom: 10px;
+.active {
+  color: orange;
 }
-
-.item-list {
-  list-style: none;
+.active-half {
+  color: orange; 
+}
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-.item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.item-title {
-  flex-grow: 1;
-}
-
-.count-buttons {
-  display: flex;
-  align-items: center;
-}
-
-.increment-button,
-.decrement-button {
-  font-size: 18px;
-  padding: 5px 10px;
-  margin-right: 10px;
-  border: none;
+.header{
+  height: 100px;
   background-color: #222;
-  cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   color: #fff;
-  border-radius: 5px;
 }
-
-.increment-button:hover,
-.decrement-button:hover {
-  background-color: #e0e0e0;
+.menu_wrapper{
+  display: flex;
+  gap: 40px
 }
-
-.item-count {
-  font-weight: bold;
-  margin: 0 10px;
+.menu_wrapper > a {
+  font-size: 30px;
 }
-
-.add-button {
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background-color: #165664;
-  color: white;
+.content{
+  padding: 100px 50px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+}
+button{
+  background-color: #222;
+  color: #fff;
+  border: 0;
+  margin-top: 10px;
+  border-radius: 10px;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  transition: 100ms;
+}
+.ProdImg{
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer{
+  height: 100px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+}
+.goBack{
+  width: 100px;
+  height: 80px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+li.ProductPreview {
+  width: 400px;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 10px;
+  color: #fff;
   border-radius: 10px;
 }
-
-.add-button:hover {
-  background-color: #134b57;
-  transform: scale(1.05);
+a {
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer; 
 }
